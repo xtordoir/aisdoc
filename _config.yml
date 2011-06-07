@@ -1,5 +1,5 @@
-safe: true
-source: /Users/xavier/projects/html/aisdoc/
-destination: /Users/xavier/data/aisdoc/
-lsi: false
 pygments: true
+exclude:
+- Rakefile
+- README.textile
+- public
