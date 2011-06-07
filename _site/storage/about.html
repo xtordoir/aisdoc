@@ -46,16 +46,44 @@
 
 	<div class="container">	
 		
-		{% include header.html %}
+		<header class="main sixteen columns">
+	<h1 class="remove-bottom" style="margin-top: 40px">Alma In Silico - API Documentation</h1>
+	<h5>Version 0.0.1</h5>
+	<hr />
+</header>
 		<div class="one-third column">
 		  <nav>
-		    {% include _menu/main.html %}
+		    
+<li class=main><a href="/index.html">home</a></li>
+<li class=main><a href="/service/about.html">Services</a></li>
+
+<li class=main><a href="/storage/about.html">Storage</a></li>
+
+<li><a href=/storage/about.html >About Storage</a></li>
+<li><a href=/storage/quickstart.html >Quick start</a></li>
+<li><a href=/storage/activation.html >Activation</a></li>
+<li><a href=/storage/usage.html >Usage</a></li>
+<li><a href=/storage/tools.html >Tools</a></li>
+<li><a href=/storage/restapi.html >REST API</a></li>
+
+<li class=main><a href="/application/about.html">Application</a></li>
+
+<li class=main><a href="/authentication/about.html">Authentication</a></li>
+
+<li class=main><a href="/billing/about.html">Billing</a></li>
+
+<li class=main><a href="/about.html">About</a></li>
     		
     	</nav>
     	
 		</div>
 		<div class="column">
-			{{ content }}
+			<article>
+<header>
+  <h2>About...Storage!</h2>
+</header>
+
+</article>
 		</div>
 
 	</div><!-- container -->
