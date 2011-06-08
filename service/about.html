@@ -3,10 +3,39 @@ layout: main
 id: service
 title: About
 ---
+<div class="ten columns content">
+	<article>
+		<header>
+			<h2>About Service API</h2>
+		</header>
+		<section>
+			<p>The entities managed by the Services API are:</p>
+			<ul>
+				<li><em>Facility</em>: The organization exposing services to users</li>
+				<li><em>Service</em>: The services exposed in the system</li>
+				<li><em>Order</em>: The orders submitted by the users as customers of a Facility</li>
+			</ul>
+			<p>
+				The typical usage flow is the following:
+			</p>
+			<ol>
+				<li>
+					<p>
+						A user with rights to manage Services within a Facility creates a Service, defining all parameters a customer has to fill-in for a Order to be processed. Usually this task is performed in the web <a href="https://services.alma-in-silico.com">application</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						A user with rights to manage Services within a Facility creates a Service, defining all parameters a customer has to fill-in for a Order to be processed. Usually this task is performed in the web <a href="">application</a>.
+					</p>
+				</li>	
+			</ol>
 
-<article>
-<header>
-  <h2>About...Service!</h2>
-</header>
-
+			<em>Services</em> are offered by <em>Facilities</em> and exposed in the web application to their customers. <em>Services</em> are configured by a service manager. A <em>Service</em> allows to register the required information from the customer for an <em>Order</em> to be executed.
+		</p>
+		<p>
+			For example, a computing service might register an input file and a number of parameters. For web-lab <em>Services</em>, samples and their parameters can be registered and associated with an experiment. The <em>Services</em> API is used by the <em>Facility</em> executing the <em>Orders</em> to get the data into its own IT system and to update the status of the Orders.
+		</p>
+	</section>
 </article>
+</div>

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -51,40 +52,72 @@
 	<h5>Version 0.0.1</h5>
 	<hr />
 </header>
-		<div class="one-third column">
+		<div class="three columns sidebar">
 		  <nav>
 		    
 
 <li class=main><a href="/aisdoc/index.html">home</a></li>
-<li class=main><a href="/aisdoc/service/about.html">Services</a></li>
+<li class=main><a href="/aisdoc/about.html">About</a></li>
+<li class=main><a href="/aisdoc/service/about.html">Services</a>
 
-<li><a href=/service/about.html >About Service</a></li>
-<li><a href=/service/quickstart.html >Quick start</a></li>
-<li><a href=/service/activation.html >Activation</a></li>
-<li><a href=/service/usage.html >Usage</a></li>
-<li><a href=/service/tools.html >Tools</a></li>
-<li><a href=/service/restapi.html >REST API</a></li>
-
+<ul>
+<li><a href=/aisdoc/service/about.html >About Service</a></li>
+<li><a href=/aisdoc/service/quickstart.html >Quick start</a></li>
+<li><a href=/aisdoc/service/activation.html >Activation</a></li>
+<li><a href=/aisdoc/service/usage.html >Usage</a></li>
+<li><a href=/aisdoc/service/tools.html >Tools</a></li>
+<li><a href=/aisdoc/service/restapi.html >REST API</a></li>
+</ul>
+</li>
 <li class=main><a href="/aisdoc/storage/about.html">Storage</a></li>
 
 <li class=main><a href="/aisdoc/application/about.html">Application</a></li>
 
-<li class=main><a href="/aisdoc/authentication/about.html">Authentication</a></li>
+<li class=main><a href="/aisdoc/authentication/about.html">Access and Billing</a></li>
 
-<li class=main><a href="/aisdoc/billing/about.html">Billing</a></li>
 
-<li class=main><a href="/aisdoc/about.html">About</a></li>
+
     		
     	</nav>
     	
 		</div>
 		<div class="column">
-			<article>
-<header>
-  <h2>About...Service!</h2>
-</header>
+			<div class="ten columns content">
+	<article>
+		<header>
+			<h2>About Service API</h2>
+		</header>
+		<section>
+			<p>The entities managed by the Services API are:</p>
+			<ul>
+				<li><em>Facility</em>: The organization exposing services to users</li>
+				<li><em>Service</em>: The services exposed in the system</li>
+				<li><em>Order</em>: The orders submitted by the users as customers of a Facility</li>
+			</ul>
+			<p>
+				The typical usage flow is the following:
+			</p>
+			<ol>
+				<li>
+					<p>
+						A user with rights to manage Services within a Facility creates a Service, defining all parameters a customer has to fill-in for a Order to be processed. Usually this task is performed in the web <a href="https://services.alma-in-silico.com">application</a>.
+					</p>
+				</li>
+				<li>
+					<p>
+						A user with rights to manage Services within a Facility creates a Service, defining all parameters a customer has to fill-in for a Order to be processed. Usually this task is performed in the web <a href="">application</a>.
+					</p>
+				</li>	
+			</ol>
 
+			<em>Services</em> are offered by <em>Facilities</em> and exposed in the web application to their customers. <em>Services</em> are configured by a service manager. A <em>Service</em> allows to register the required information from the customer for an <em>Order</em> to be executed.
+		</p>
+		<p>
+			For example, a computing service might register an input file and a number of parameters. For web-lab <em>Services</em>, samples and their parameters can be registered and associated with an experiment. The <em>Services</em> API is used by the <em>Facility</em> executing the <em>Orders</em> to get the data into its own IT system and to update the status of the Orders.
+		</p>
+	</section>
 </article>
+</div>
 		</div>
 
 	</div><!-- container -->
