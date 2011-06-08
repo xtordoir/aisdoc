@@ -17,7 +17,7 @@
  *==================================================
  */
 body {
-  background: url(/images/back.png) repeat; }
+  background: url(../images/back.png) repeat; }
 
 nav li a {
   text-decoration: none; }

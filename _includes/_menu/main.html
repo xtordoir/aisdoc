@@ -1,6 +1,7 @@
+{% assign pathBase = "/aisdoc" %}
 
-<li class=main><a href="/index.html">home</a></li>
-<li class=main><a href="/service/about.html">Services</a></li>
+<li class=main><a href="{{ pathBase }}/index.html">home</a></li>
+<li class=main><a href="{{ pathBase }}/service/about.html">Services</a></li>
 {% if page.id == 'service' %}
 <li><a href=/service/about.html >About Service</a></li>
 <li><a href=/service/quickstart.html >Quick start</a></li>
@@ -9,7 +10,7 @@
 <li><a href=/service/tools.html >Tools</a></li>
 <li><a href=/service/restapi.html >REST API</a></li>
 {% endif %}
-<li class=main><a href="/storage/about.html">Storage</a></li>
+<li class=main><a href="{{ pathBase }}/storage/about.html">Storage</a></li>
 {% if page.id == 'storage' %}
 <li><a href=/storage/about.html >About Storage</a></li>
 <li><a href=/storage/quickstart.html >Quick start</a></li>
@@ -18,7 +19,7 @@
 <li><a href=/storage/tools.html >Tools</a></li>
 <li><a href=/storage/restapi.html >REST API</a></li>
 {% endif %}
-<li class=main><a href="/application/about.html">Application</a></li>
+<li class=main><a href="{{ pathBase }}/application/about.html">Application</a></li>
 {% if page.id == 'application' %}
 <li><a href=/application/about.html >About Application</a></li>
 <li><a href=/application/quickstart.html >Quick start</a></li>
@@ -27,7 +28,7 @@
 <li><a href=/application/tools.html >Tools</a></li>
 <li><a href=/application/restapi.html >REST API</a></li>
 {% endif %}
-<li class=main><a href="/authentication/about.html">Authentication</a></li>
+<li class=main><a href="{{ pathBase }}/authentication/about.html">Authentication</a></li>
 {% if page.id == 'authentication' %}
 <li><a href=/authentication/about.html >About Authentication</a></li>
 <li><a href=/authentication/quickstart.html >Quick start</a></li>
@@ -36,7 +37,7 @@
 <li><a href=/authentication/tools.html >Tools</a></li>
 <li><a href=/authentication/restapi.html >REST API</a></li>
 {% endif %}
-<li class=main><a href="/billing/about.html">Billing</a></li>
+<li class=main><a href="{{ pathBase }}/billing/about.html">Billing</a></li>
 {% if page.id == 'billing' %}
 <li><a href=/billing/about.html >About billing</a></li>
 <li><a href=/billing/quickstart.html >Quick start</a></li>
@@ -45,4 +46,4 @@
 <li><a href=/billing/tools.html >Tools</a></li>
 <li><a href=/billing/restapi.html >REST API</a></li>
 {% endif %}
-<li class=main><a href="/about.html">About</a></li>
+<li class=main><a href="{{ pathBase }}/about.html">About</a></li>
