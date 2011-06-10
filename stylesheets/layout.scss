@@ -30,6 +30,9 @@
  }
 
  nav li {
+ &:not(.main){
+ margin-left:20px;
+ }
   a{
     text-decoration:none;
   }

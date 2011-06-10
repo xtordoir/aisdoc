@@ -19,8 +19,12 @@
 body {
   background: url(../images/back.png) repeat; }
 
+nav li:not(.main){
+	margin-left:20px;
+}
 nav li a {
-  text-decoration: none; }
+  text-decoration: none;
+ }
 nav li.main {
   list-style-type: square; }
   nav li.main a {
