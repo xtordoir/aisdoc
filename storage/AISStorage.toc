@@ -5,30 +5,33 @@
 \contentsline {section}{\numberline {1.3}object}{4}
 \contentsline {section}{\numberline {1.4}object metadata}{5}
 \contentsline {section}{\numberline {1.5}store}{5}
-\contentsline {part}{II\hspace {1em}User guide: web interface}{6}
-\contentsline {chapter}{\numberline {2}Store management}{7}
-\contentsline {section}{\numberline {2.1}Store creation}{7}
-\contentsline {subsection}{\numberline {2.1.1}Store definition}{7}
-\contentsline {subsection}{\numberline {2.1.2}Store validation: AIS public key installation}{9}
-\contentsline {section}{\numberline {2.2}Store rights management}{10}
-\contentsline {chapter}{\numberline {3}Bucket management}{12}
-\contentsline {section}{\numberline {3.1}Bucket creation}{12}
-\contentsline {subsection}{\numberline {3.1.1}Bucket definition}{12}
-\contentsline {subsection}{\numberline {3.1.2}Bucket metadata}{13}
-\contentsline {section}{\numberline {3.2}Bucket rights management}{14}
-\contentsline {section}{\numberline {3.3}Relationship between Store and bucket management}{14}
-\contentsline {chapter}{\numberline {4}Object management}{16}
-\contentsline {section}{\numberline {4.1}Object creation: make directory}{16}
-\contentsline {subsection}{\numberline {4.1.1}Object definition}{16}
-\contentsline {subsection}{\numberline {4.1.2}Object metadata}{18}
-\contentsline {subsection}{\numberline {4.1.3}Object creation: upload file}{18}
-\contentsline {subsection}{\numberline {4.1.4}Object file definition}{18}
-\contentsline {subsection}{\numberline {4.1.5}Object file metadata}{18}
-\contentsline {part}{III\hspace {1em}User guide: REST API}{21}
-\contentsline {chapter}{\numberline {5}Store}{22}
-\contentsline {chapter}{\numberline {6}Bucket}{23}
-\contentsline {section}{\numberline {6.1}Bucket creation}{23}
-\contentsline {section}{\numberline {6.2}Bucket }{23}
-\contentsline {subsection}{\numberline {6.2.1}Object as File}{23}
-\contentsline {subsection}{\numberline {6.2.2}Object metadata}{23}
-\contentsline {section}{\numberline {6.3}Object API}{23}
+\contentsline {part}{II\hspace {1em}User guide: web interface}{7}
+\contentsline {chapter}{\numberline {2}Store management}{8}
+\contentsline {section}{\numberline {2.1}Stores general navigation}{8}
+\contentsline {section}{\numberline {2.2}Store creation}{8}
+\contentsline {subsection}{\numberline {2.2.1}Store definition}{8}
+\contentsline {subsection}{\numberline {2.2.2}Store validation: AIS public key installation}{12}
+\contentsline {section}{\numberline {2.3}Store rights management}{13}
+\contentsline {chapter}{\numberline {3}Bucket management}{15}
+\contentsline {section}{\numberline {3.1}Buckets general navigation}{15}
+\contentsline {section}{\numberline {3.2}Bucket creation}{15}
+\contentsline {subsection}{\numberline {3.2.1}Bucket definition}{15}
+\contentsline {subsection}{\numberline {3.2.2}Bucket metadata}{18}
+\contentsline {section}{\numberline {3.3}Bucket rights management}{18}
+\contentsline {chapter}{\numberline {4}Object management}{20}
+\contentsline {section}{\numberline {4.1}Object general navigation}{20}
+\contentsline {section}{\numberline {4.2}Object creation: make directory}{20}
+\contentsline {subsection}{\numberline {4.2.1}Object definition}{21}
+\contentsline {subsection}{\numberline {4.2.2}Object metadata}{21}
+\contentsline {subsection}{\numberline {4.2.3}Object creation: upload file}{22}
+\contentsline {subsection}{\numberline {4.2.4}Object file definition}{22}
+\contentsline {subsection}{\numberline {4.2.5}Object file metadata}{23}
+\contentsline {section}{\numberline {4.3}Relationship between store and bucket rights}{24}
+\contentsline {part}{III\hspace {1em}User guide: REST API}{25}
+\contentsline {chapter}{\numberline {5}Store}{26}
+\contentsline {chapter}{\numberline {6}Bucket}{27}
+\contentsline {section}{\numberline {6.1}Bucket creation}{27}
+\contentsline {section}{\numberline {6.2}Bucket }{27}
+\contentsline {subsection}{\numberline {6.2.1}Object as File}{27}
+\contentsline {subsection}{\numberline {6.2.2}Object metadata}{27}
+\contentsline {section}{\numberline {6.3}Object API}{27}
