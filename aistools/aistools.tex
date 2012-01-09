@@ -1,0 +1,40 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Brief Article}
+\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section{General setup}
+The \emph{ais} tools distribution is a combination of a bash script calling the execution of a .jar file.
+\subsection{Configuration flle}
+The \emph{ais} command line tools take care of calling the REST API on behalf of the user. The tools deal with the details of HTTP requests including authentication. Thus, the tools must be able to be configured in order to know the credentials and REST API urls. All this information is provided in the form of a java properties file. By default, this file must be located in \$HOME/.ais/config.properties\\
+Alternative configuration files can be used and their paths specified an option of the \emph{ais} tools.
+\subsection{OS environment}
+The \emph{ais} tools are \emph{bash} scripts wrapping \emph{java jar} files. The bash interpreter is supposed to be availables as \emph{/bin/bash}. java must be in the PATH of the user, also the \emph{AISClient.jar} file must be in the PATH with execute rights for the user.
+\section{Storage tools}
+This section describes the usage of the storage management tools.
+\subsection{ais-ls}
+Usage:\\
+\begin{verbatim}
+ais-ls [-i configfile] [bucket]
+where configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the bucket
+This tool will list all objects stored in the specified bucket. If no bucket is specified, the list of readable buckets for the user is displayed.
+\end{verbatim}
+\subsection{ais-get}
+\subsection{ais-put}
+\subsection{ais-md}
+\subsection{ais-rm}
+\subsection{ais-getmeta}
+\subsection{ais-putmeta}
+\end{document}  
