@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}General setup}{1}
+\contentsline {subsection}{\numberline {1.1}OS environment}{2}
+\contentsline {subsection}{\numberline {1.2}User Configuration}{2}
+\contentsline {subsection}{\numberline {1.3}Advanced user Configuration}{2}
+\contentsline {section}{\numberline {2}Storage tools}{3}
+\contentsline {subsection}{\numberline {2.1}ais-ls}{3}
+\contentsline {subsection}{\numberline {2.2}ais-get}{3}
+\contentsline {subsection}{\numberline {2.3}ais-lget}{4}
+\contentsline {subsection}{\numberline {2.4}ais-put}{4}
+\contentsline {subsection}{\numberline {2.5}ais-lput}{5}
+\contentsline {subsection}{\numberline {2.6}ais-mkdir}{5}
+\contentsline {subsection}{\numberline {2.7}ais-rm}{6}
+\contentsline {subsection}{\numberline {2.8}ais-getmeta}{6}
+\contentsline {subsection}{\numberline {2.9}ais-putmeta}{6}
+\contentsline {subsection}{\numberline {2.10}ais-export}{7}
+\contentsline {subsection}{\numberline {2.11}ais-import}{7}

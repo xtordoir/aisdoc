@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.30)  18 JAN 2012 16:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.30)  18 JAN 2012 16:40
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**AISStorage.tex
-(./AISStorage.tex
+**aistools.tex
+(./aistools.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
@@ -17,20 +17,19 @@ iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
 ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
 ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
 .
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -53,9 +52,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
 \Gm@bindingoffset=\dimen103
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
@@ -89,7 +88,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count91
+\Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
@@ -151,15 +150,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(./AISStorage.aux
-
-LaTeX Warning: Label `fig:example' multiply defined.
-
-
-LaTeX Warning: Label `fig:example' multiply defined.
-
-)
-\openout1 = `AISStorage.aux'.
+(./aistools.aux)
+\openout1 = `aistools.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -210,16 +202,16 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
+\scratchcounter=\count91
 \scratchdimen=\dimen113
 \scratchbox=\box26
-\nofMPsegments=\count93
-\nofMParguments=\count94
+\nofMPsegments=\count92
+\nofMParguments=\count93
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count95
+\MPscratchCnt=\count94
 \MPscratchDim=\dimen114
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
 \everyMPtoPDFconversion=\toks18
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 16.
@@ -230,157 +222,270 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [1
+) (./aistools.toc)
+\tf@toc=\write3
+\openout3 = `aistools.toc'.
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./AISS
-torage.toc
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
 [1
 
-])
-\tf@toc=\write3
-\openout3 = `AISStorage.toc'.
-
- [2] [3
-
-]
-Chapter 1.
-Missing character: There is no ¤ in font cmr10!
-[4
-
-] <store-bucket-object.pdf, id=24, 578.16pt x 571.13374pt>
-File: store-bucket-object.pdf Graphic file (type pdf)
-
-<use store-bucket-object.pdf>
-Package pdftex.def Info: store-bucket-object.pdf used on input line 34.
-(pdftex.def)             Requested size: 430.00462pt x 424.7762pt.
- [5] [6 <./store-bucket-object.pdf>] [7
-
-]
-Chapter 2.
-<storesview.png, id=181, 1013.7875pt x 698.61pt>
-File: storesview.png Graphic file (type png)
- <use storesview.png>
-Package pdftex.def Info: storesview.png used on input line 48.
-(pdftex.def)             Requested size: 430.00462pt x 296.31369pt.
-
-
-LaTeX Warning: Reference `fig:requeststorecreate' on page 8 undefined on input 
-line 54.
-
-<askstorec.png, id=182, 1017.8025pt x 700.6175pt>
-File: askstorec.png Graphic file (type png)
- <use askstorec.png>
-Package pdftex.def Info: askstorec.png used on input line 57.
-(pdftex.def)             Requested size: 430.00462pt x 295.9999pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 65.
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
- [8
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
 
-] [9 <./storesview.png>] [10 <./askstorec.png>]
-<createstore.png, id=192, 1014.79124pt x 701.62125pt>
-File: createstore.png Graphic file (type png)
- <use createstore.png>
-Package pdftex.def Info: createstore.png used on input line 76.
-(pdftex.def)             Requested size: 430.00462pt x 297.30185pt.
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
-<getkey.png, id=193, 1013.7875pt x 698.61pt>
-File: getkey.png Graphic file (type png)
- <use getkey.png>
-Package pdftex.def Info: getkey.png used on input line 86.
-(pdftex.def)             Requested size: 430.00462pt x 296.31369pt.
- [11 <./createstore.png>] [12 <./getkey.png>] <storeacl.png, id=202, 1014.79124
-pt x 699.61375pt>
-File: storeacl.png Graphic file (type png)
-
-<use storeacl.png>
-Package pdftex.def Info: storeacl.png used on input line 106.
-(pdftex.def)             Requested size: 430.00462pt x 296.4512pt.
- [13] [14 <./storeacl.png>]
-Chapter 3.
-<bucketsview.png, id=209, 1014.79124pt x 698.61pt>
-File: bucketsview.png Graphic file (type png)
- <use bucketsview.png>
-Package pdftex.def Info: bucketsview.png used on input line 118.
-(pdftex.def)             Requested size: 430.00462pt x 296.02588pt.
-
-[15
-
-] [16 <./bucketsview.png>]
-<createbucket.png, id=216, 1014.79124pt x 700.6175pt>
-File: createbucket.png Graphic file (type png)
- <use createbucket.png>
-Package pdftex.def Info: createbucket.png used on input line 139.
-(pdftex.def)             Requested size: 430.00462pt x 296.87653pt.
-
-[17 <./createbucket.png>] <bucketacl.png, id=220, 1012.78375pt x 699.61375pt>
-File: bucketacl.png Graphic file (type png)
-
-<use bucketacl.png>
-Package pdftex.def Info: bucketacl.png used on input line 160.
-(pdftex.def)             Requested size: 430.00462pt x 297.03835pt.
- [18] [19 <./bucketacl.png>]
-Chapter 4.
-[20
-
-] <adddir.png, id=231, 1016.79875pt x 698.61pt>
-File: adddir.png Graphic file (type png)
- <use adddir.png>
-Package pdftex.def Info: adddir.png used on input line 181.
-(pdftex.def)             Requested size: 430.00462pt x 295.43958pt.
- [21 <./adddir.png>] <addfile.png, id=235, 1015.795pt x 699.61375pt>
-File: addfile.png Graphic file (type png)
- <use addfile.png>
-Package pdftex.def Info: addfile.png used on input line 197.
-(pdftex.def)             Requested size: 430.00462pt x 296.1523pt.
-
-[22 <./addfile.png>] <metaview.png, id=239, 1013.7875pt x 698.61pt>
-File: metaview.png Graphic file (type png)
-
-<use metaview.png>
-Package pdftex.def Info: metaview.png used on input line 212.
-(pdftex.def)             Requested size: 430.00462pt x 296.31369pt.
- [23 <./metaview.png>] [24] [25
-
-]
-Chapter 5.
-[26
-
-]
-Chapter 6.
-[27
-
-] (./AISStorage.aux)
-
-LaTeX Warning: There were undefined references.
+ []
 
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 65--65
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
 
- ) 
+
+Overfull \hbox (24.14171pt too wide) in paragraph at lines 65--65
+[]\OT1/cmtt/m/n/10.95 This tool will list all objects stored in the specified b
+ucket. If no bucket is[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 78--78
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+[3]
+Overfull \hbox (64.38252pt too wide) in paragraph at lines 78--78
+[]\OT1/cmtt/m/n/10.95 This tool get the file object from the bucket and make a 
+copy on the local filesystem.[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 105--105
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Overfull \hbox (64.38252pt too wide) in paragraph at lines 105--105
+[]\OT1/cmtt/m/n/10.95 This tool get the file object from the bucket and make a 
+copy on the local filesystem.[] 
+ []
+
+
+Overfull \hbox (81.62859pt too wide) in paragraph at lines 105--105
+[]\OT1/cmtt/m/n/10.95 This version makes use of the fact that the store is moun
+ted locally to optimize transfer[] 
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 105--105
+[]\OT1/cmtt/m/n/10.95 as copy operation without transfering data through HTTP r
+equests. In order to work, the[] 
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 105--105
+[]\OT1/cmtt/m/n/10.95 configuration file must contain the localNamespace, local
+Tmp and localGroup properties.[] 
+ []
+
+
+Overfull \hbox (87.37727pt too wide) in paragraph at lines 105--105
+[]    \OT1/cmtt/m/n/10.95 localGroup the group user to share data on the filesy
+stem between the store management[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 119--119
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 146--146
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Overfull \hbox (81.62859pt too wide) in paragraph at lines 146--146
+[]\OT1/cmtt/m/n/10.95 This version makes use of the fact that the store is moun
+ted locally to optimize transfer[] 
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 146--146
+[]\OT1/cmtt/m/n/10.95 as copy operation without transfering data through HTTP r
+equests. In order to work, the[] 
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 146--146
+[]\OT1/cmtt/m/n/10.95 configuration file must contain the localNamespace, local
+Tmp and localGroup properties.[] 
+ []
+
+
+Overfull \hbox (87.37727pt too wide) in paragraph at lines 146--146
+[]    \OT1/cmtt/m/n/10.95 localGroup the group user to share data on the filesy
+stem between the store management[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+[5]
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 159--159
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Overfull \hbox (12.64433pt too wide) in paragraph at lines 159--159
+[]      \OT1/cmtt/m/n/10.95 object is the path to the new empty object (or dire
+ctory) in the bucket[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 171--171
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 184--184
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Overfull \hbox (64.38252pt too wide) in paragraph at lines 184--184
+[]\OT1/cmtt/m/n/10.95 This tool gets the metadata from an object in a bucket an
+d saves them in a local file.[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+[6]
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 202--202
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Overfull \hbox (81.62859pt too wide) in paragraph at lines 202--202
+[]\OT1/cmtt/m/n/10.95 The metadata are formatted in the input file in the form 
+of java properties. For example:[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 216--216
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+
+Overfull \hbox (24.14171pt too wide) in paragraph at lines 216--216
+[]      \OT1/cmtt/m/n/10.95 dest is the path to the directpory where the bucket
+ content will be saved[] 
+ []
+
+
+Overfull \hbox (18.39302pt too wide) in paragraph at lines 216--216
+[]\OT1/cmtt/m/n/10.95 This tool gets all object from a bucket and saves them on
+ the local filesystem[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Overfull \hbox (70.13121pt too wide) in paragraph at lines 231--231
+[]      \OT1/cmtt/m/n/10.95 configfile is the ais configuration file, default i
+s $HOME/.ais/config.properties[] 
+ []
+
+[7]
+Overfull \hbox (58.63383pt too wide) in paragraph at lines 231--231
+[]\OT1/cmtt/m/n/10.95 This tool recursively puts all files and directories from
+ the source into the bucket,[] 
+ []
+
+[8] (./aistools.aux) ) 
 Here is how much of TeX's memory you used:
- 2353 strings out of 493633
- 33374 string characters out of 3143376
- 91766 words of memory out of 3000000
- 5614 multiletter control sequences out of 15000+200000
- 12910 words of font info for 48 fonts, out of 3000000 for 9000
+ 2258 strings out of 493633
+ 31849 string characters out of 3143376
+ 90280 words of memory out of 3000000
+ 5531 multiletter control sequences out of 15000+200000
+ 11866 words of font info for 45 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 42i,6n,24p,660b,226s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on AISStorage.pdf (28 pages, 643692 bytes).
+ 42i,6n,24p,770b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb>
+Output written on aistools.pdf (8 pages, 116045 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 63 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
