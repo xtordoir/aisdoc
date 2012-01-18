@@ -8,33 +8,226 @@
 \usepackage{epstopdf}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{Brief Article}
-\author{The Author}
+\title{AIS Storage command line tools}
+\author{Xavier Tordoir}
 %\date{}                                           % Activate to display a given date or no date
 
 \begin{document}
 \maketitle
+\tableofcontents
 \section{General setup}
-The \emph{ais} tools distribution is a combination of a bash script calling the execution of a .jar file.
-\subsection{Configuration flle}
+The \emph{ais} tools distribution is a combination of a bash scripts calling the execution of a java \emph{jar} file.All storage operation involve an HTTP request to the storage server managing metadata. File transfers from and to the user local filesystem can pass through the HTTP server. If the AIS storage stores files on a disk that is mounted locally, it is possible to configure the AIS tools to get or put files via local copy operations, much faster than http transfers.\subsection{OS environment}
+The \emph{ais} tools are \emph{bash} scripts wrapping \emph{java jar} files. The bash interpreter is supposed to be located in \emph{/bin/bash}. The \emph{ais} tools seek the \emph{AISClient.jar} and \emph{java} executable, both MUST be in the PATH of the user with EXECUTE rights.\\
+\subsection{User Configuration}
 The \emph{ais} command line tools take care of calling the REST API on behalf of the user. The tools deal with the details of HTTP requests including authentication. Thus, the tools must be able to be configured in order to know the credentials and REST API urls. All this information is provided in the form of a java properties file. By default, this file must be located in \$HOME/.ais/config.properties\\
-Alternative configuration files can be used and their paths specified an option of the \emph{ais} tools.
-\subsection{OS environment}
-The \emph{ais} tools are \emph{bash} scripts wrapping \emph{java jar} files. The bash interpreter is supposed to be availables as \emph{/bin/bash}. java must be in the PATH of the user, also the \emph{AISClient.jar} file must be in the PATH with execute rights for the user.
+Alternative configuration files can be used and their paths specified as an option of the \emph{ais} tools.\\
+A default user set-up can be obtained by running the \emph{ais-configure} script. Here is an example of session used for the initial setup. Please note that the user must have an account on the \emph{AIS} web interface. (https://ais.giga.ulg.ac.be).
+\begin{verbatim}
+(0)[xavier@srv051 ~]$ ls -l .ais
+ls: .ais: No such file or directory
+(2)[xavier@srv051 ~]$ ais-configure 
+Username: xtordoir
+Password: 
+Server url (ais.giga.ulg.ac.be): 
+(0)[xavier@srv051 ~]$ ls -l .ais
+total 8
+-rw------- 1 xavier xavier 337 Jan 11 13:00 config.properties
+-rw-rw-r-- 1 xavier xavier 227 Jan 11 13:00 cookies.txt
+\end{verbatim}
+\subsection{Advanced user Configuration}
+If the file store is mounted as a local disk for the user, optimized put and get operations must be performed through local copy (cp) without granting unwanted file access. This can be configured by making the store management user member of a group owned by the end user. For example, the store username is \emph{aisstore}. The end-user is \emph{joesix}. The user \emph{joesix} must own a default group for local get and put operations, e.g. \emph{joesixgrp} and the user \emph{aisstore} must belong to this group. This ensure that the store user \emph{aisstore} can make some files available to the user\emph{joesix} via the group \emph{joesixgrp}, and conversely the user \emph{joesix} can grant access on files to \emph{aisstore}.\\
+The process of sending and getting files to and from the store mounted locally consists in copying the file into the \emph{temporary} directory of the store. For the local operations, the following properties must be set in the config file:
+\begin{itemize}
+\item localNamespace the identifier of the store mounted locally
+\item localTmp the local store temporary directory (with trailing slash)
+\item localGroup the group user to share data on the filesystem between the store management user and the end-user.
+\end{itemize}
+For example:
+\begin{verbatim}
+localNamespace = giga
+localTmp = /home/safe/aisapps/tmp/
+localGroup = xavier
+\end{verbatim}
+
 \section{Storage tools}
 This section describes the usage of the storage management tools.
 \subsection{ais-ls}
 Usage:\\
 \begin{verbatim}
-ais-ls [-i configfile] [bucket]
-where configfile is the ais configuration file, default is $HOME/.ais/config.properties
+ais-ls [-c configfile] [bucket]
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
       bucket is the bucket
-This tool will list all objects stored in the specified bucket. If no bucket is specified, the list of readable buckets for the user is displayed.
+      
+This tool will list all objects stored in the specified bucket. If no bucket is 
+specified, the list of readable buckets for the user is displayed.
 \end{verbatim}
 \subsection{ais-get}
+Usage:\\
+\begin{verbatim}
+ais-get [-c configfile] bucket object file
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the bucket
+      object is the path to the object in the bucket
+      file is the local file where to store the bucket object
+      
+This tool get the file object from the bucket and make a copy on the local filesystem.
+\end{verbatim}
+\subsection{ais-lget}
+Usage:\\
+\begin{verbatim}
+ais-lget [-c configfile] bucket object file
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the bucket
+      object is the path to the object in the bucket
+      file is the local file where to store the bucket object
+      
+This tool get the file object from the bucket and make a copy on the local filesystem.
+This version makes use of the fact that the store is mounted locally to optimize transfer
+as copy operation without transfering data through HTTP requests. In order to work, the
+configuration file must contain the localNamespace, localTmp and localGroup properties.
+E.g:
+localNamespace = giga
+localTmp = /home/safe/aisapps/tmp/
+localGroup = user_group
+
+where
+    localNamespace is the identifier of the local store
+    localTmp the local store temporary directory (with trailing slash)
+    localGroup the group user to share data on the filesystem between the store management
+user and the end-user.
+
+\end{verbatim}
+
 \subsection{ais-put}
-\subsection{ais-md}
+Usage:\\
+\begin{verbatim}
+ais-put [-c configfile] file bucket object
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      file is the local file to be stored in the bucket
+      bucket is the target bucket
+      object is the path to the object in the bucket
+      
+This tool puts a file into a bucket.
+\end{verbatim}
+\subsection{ais-lput}
+Usage:\\
+\begin{verbatim}
+ais-lput [-c configfile] file bucket object
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      file is the local file to be stored in the bucket
+      bucket is the target bucket
+      object is the path to the object in the bucket
+      
+This tool puts a file into a bucket.
+This version makes use of the fact that the store is mounted locally to optimize transfer
+as copy operation without transfering data through HTTP requests. In order to work, the
+configuration file must contain the localNamespace, localTmp and localGroup properties.
+E.g:
+localNamespace = giga
+localTmp = /home/safe/aisapps/tmp/
+localGroup = user_group
+
+where
+    localNamespace is the identifier of the local store
+    localTmp the local store temporary directory (with trailing slash)
+    localGroup the group user to share data on the filesystem between the store management
+user and the end-user.
+
+\end{verbatim}
+
+\subsection{ais-mkdir}
+Usage:\\
+\begin{verbatim}
+ais-mkdir [-c configfile] bucket object
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the target bucket
+      object is the path to the new empty object (or directory) in the bucket
+      
+This tool creates an empty object (directory) into a bucket.
+\end{verbatim}
 \subsection{ais-rm}
+Usage:\\
+\begin{verbatim}
+ais-rm [-c configfile] bucket object
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the bucket
+      object is the path to the object in the bucket
+      
+This tool removes an object and all its children from a bucket.
+\end{verbatim}
 \subsection{ais-getmeta}
+Usage:\\
+\begin{verbatim}
+ais-getmeta [-c configfile] bucket object file
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the bucket
+      object is the path to the object in the bucket
+      file is the local file where to save the object metadata
+      
+This tool gets the metadata from an object in a bucket and saves them in a local file.
+\end{verbatim}
 \subsection{ais-putmeta}
+Usage:\\
+\begin{verbatim}
+ais-putmeta [-c configfile] file bucket object
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      file is the local file containing metadata to be put on an object
+      bucket is the target bucket
+      object is the path to the object in the bucket
+      
+This tool puts metadata read from a file on an object of a bucket.
+The metadata are formatted in the input file in the form of java properties. For example:
+
+# comment for metadata file
+date = 2011/12/25
+name = MyName
+\end{verbatim}
+\subsection{ais-export}
+TO BE IMPLEMENTED\\
+Usage:\\
+\begin{verbatim}
+ais-export [-c configfile] bucket dest
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      bucket is the bucket to be exported onto the local filesystem
+      dest is the path to the directpory where the bucket content will be saved
+      
+This tool gets all object from a bucket and saves them on the local filesystem 
+in the dest directory.
+\end{verbatim}
+\subsection{ais-import}
+TO BE IMPLEMENTED\\
+Usage:\\
+\begin{verbatim}
+ais-import [-c configfile] source bucket object
+
+where 
+      configfile is the ais configuration file, default is $HOME/.ais/config.properties
+      source is the local directory or file to be imported in the bucket
+      bucket is the target bucket
+      object is the path to the object used as root for the import
+      
+This tool recursively puts all files and directories from the source into the bucket,
+using the target object as root for this import.
+\end{verbatim}
+
 \end{document}  
