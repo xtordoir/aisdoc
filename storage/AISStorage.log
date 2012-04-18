@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.30)  18 JAN 2012 16:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.30)  18 APR 2012 15:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -161,18 +161,18 @@ LaTeX Warning: Label `fig:example' multiply defined.
 )
 \openout1 = `AISStorage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -222,11 +222,11 @@ LaTeX Font Info:    ... okay on input line 15.
 \makeMPintoPDFobject=\count97
 \everyMPtoPDFconversion=\toks18
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -251,7 +251,7 @@ Missing character: There is no ¤ in font cmr10!
 File: store-bucket-object.pdf Graphic file (type pdf)
 
 <use store-bucket-object.pdf>
-Package pdftex.def Info: store-bucket-object.pdf used on input line 34.
+Package pdftex.def Info: store-bucket-object.pdf used on input line 35.
 (pdftex.def)             Requested size: 430.00462pt x 424.7762pt.
  [5] [6 <./store-bucket-object.pdf>] [7
 
@@ -260,52 +260,52 @@ Chapter 2.
 <storesview.png, id=181, 1013.7875pt x 698.61pt>
 File: storesview.png Graphic file (type png)
  <use storesview.png>
-Package pdftex.def Info: storesview.png used on input line 48.
+Package pdftex.def Info: storesview.png used on input line 49.
 (pdftex.def)             Requested size: 430.00462pt x 296.31369pt.
 
 
 LaTeX Warning: Reference `fig:requeststorecreate' on page 8 undefined on input 
-line 54.
+line 55.
 
 <askstorec.png, id=182, 1017.8025pt x 700.6175pt>
 File: askstorec.png Graphic file (type png)
  <use askstorec.png>
-Package pdftex.def Info: askstorec.png used on input line 57.
+Package pdftex.def Info: askstorec.png used on input line 58.
 (pdftex.def)             Requested size: 430.00462pt x 295.9999pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 65.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
  [8
 
 ] [9 <./storesview.png>] [10 <./askstorec.png>]
 <createstore.png, id=192, 1014.79124pt x 701.62125pt>
 File: createstore.png Graphic file (type png)
  <use createstore.png>
-Package pdftex.def Info: createstore.png used on input line 76.
+Package pdftex.def Info: createstore.png used on input line 77.
 (pdftex.def)             Requested size: 430.00462pt x 297.30185pt.
 
 <getkey.png, id=193, 1013.7875pt x 698.61pt>
 File: getkey.png Graphic file (type png)
  <use getkey.png>
-Package pdftex.def Info: getkey.png used on input line 86.
+Package pdftex.def Info: getkey.png used on input line 87.
 (pdftex.def)             Requested size: 430.00462pt x 296.31369pt.
  [11 <./createstore.png>] [12 <./getkey.png>] <storeacl.png, id=202, 1014.79124
 pt x 699.61375pt>
 File: storeacl.png Graphic file (type png)
 
 <use storeacl.png>
-Package pdftex.def Info: storeacl.png used on input line 106.
+Package pdftex.def Info: storeacl.png used on input line 107.
 (pdftex.def)             Requested size: 430.00462pt x 296.4512pt.
  [13] [14 <./storeacl.png>]
 Chapter 3.
 <bucketsview.png, id=209, 1014.79124pt x 698.61pt>
 File: bucketsview.png Graphic file (type png)
  <use bucketsview.png>
-Package pdftex.def Info: bucketsview.png used on input line 118.
+Package pdftex.def Info: bucketsview.png used on input line 119.
 (pdftex.def)             Requested size: 430.00462pt x 296.02588pt.
 
 [15
@@ -314,14 +314,14 @@ Package pdftex.def Info: bucketsview.png used on input line 118.
 <createbucket.png, id=216, 1014.79124pt x 700.6175pt>
 File: createbucket.png Graphic file (type png)
  <use createbucket.png>
-Package pdftex.def Info: createbucket.png used on input line 139.
+Package pdftex.def Info: createbucket.png used on input line 140.
 (pdftex.def)             Requested size: 430.00462pt x 296.87653pt.
 
 [17 <./createbucket.png>] <bucketacl.png, id=220, 1012.78375pt x 699.61375pt>
 File: bucketacl.png Graphic file (type png)
 
 <use bucketacl.png>
-Package pdftex.def Info: bucketacl.png used on input line 160.
+Package pdftex.def Info: bucketacl.png used on input line 161.
 (pdftex.def)             Requested size: 430.00462pt x 297.03835pt.
  [18] [19 <./bucketacl.png>]
 Chapter 4.
@@ -330,19 +330,19 @@ Chapter 4.
 ] <adddir.png, id=231, 1016.79875pt x 698.61pt>
 File: adddir.png Graphic file (type png)
  <use adddir.png>
-Package pdftex.def Info: adddir.png used on input line 181.
+Package pdftex.def Info: adddir.png used on input line 182.
 (pdftex.def)             Requested size: 430.00462pt x 295.43958pt.
  [21 <./adddir.png>] <addfile.png, id=235, 1015.795pt x 699.61375pt>
 File: addfile.png Graphic file (type png)
  <use addfile.png>
-Package pdftex.def Info: addfile.png used on input line 197.
+Package pdftex.def Info: addfile.png used on input line 198.
 (pdftex.def)             Requested size: 430.00462pt x 296.1523pt.
 
 [22 <./addfile.png>] <metaview.png, id=239, 1013.7875pt x 698.61pt>
 File: metaview.png Graphic file (type png)
 
 <use metaview.png>
-Package pdftex.def Info: metaview.png used on input line 212.
+Package pdftex.def Info: metaview.png used on input line 213.
 (pdftex.def)             Requested size: 430.00462pt x 296.31369pt.
  [23 <./metaview.png>] [24] [25
 
@@ -377,7 +377,7 @@ usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on AISStorage.pdf (28 pages, 643692 bytes).
+Output written on AISStorage.pdf (28 pages, 643470 bytes).
 PDF statistics:
  280 PDF objects out of 1000 (max. 8388607)
  170 compressed objects within 2 object streams
